@@ -14,14 +14,15 @@ let multiplier = 1;
 // multiplier One
 multiplierOne.addEventListener("click", function () {
     multiplier = multiplier + 1.2;
-    multiAmount.innerHTML = `${multiplier}`;
+    // show multiplier amt
+    multiAmount.innerHTML = `${multiplier.toFixed(1)} x`;
 })
 
 // increment
 cookie.addEventListener("click", function () {
     clicks++;
     totalCount = clicks * multiplier;
-    counter.innerHTML = `Counter: ${totalCount.toFixed(3)}`;
+    counter.innerHTML = `Counter: ${totalCount.toFixed(1)}`;
 
 });
 
@@ -34,7 +35,7 @@ cookie.addEventListener("click", function () {
 
 // change title every 5 seconds
 setInterval (function titleUpdater() {
-document.title = `${totalCount.toFixed(3)} Cookie Clicker Score`;
+document.title = `${totalCount.toFixed(1)} Cookie Clicker Score`;
 }, 5000);
 
 
@@ -44,3 +45,6 @@ document.title = `${totalCount.toFixed(3)} Cookie Clicker Score`;
 /// i = multiplier
 /// countNumb = clicks
 /// totalCount = clicks * multiplier
+
+/// mOnePrice = 15;
+/// mOnePrice = mOnePrice + 1.4;
