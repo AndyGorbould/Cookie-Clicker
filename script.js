@@ -3,6 +3,8 @@
 
 const cookie = document.getElementById("cookie");
 
+multiAmount = document.getElementById("multiAmount");
+
 // init
 let clicks = 0;
 let totalCount = 0;
@@ -11,7 +13,8 @@ let multiplier = 1;
 
 // multiplier One
 multiplierOne.addEventListener("click", function () {
-    multiplier = multiplier * 1.2;
+    multiplier = multiplier + 1.2;
+    multiAmount.innerHTML = `${multiplier}`;
 })
 
 // increment
@@ -21,6 +24,7 @@ cookie.addEventListener("click", function () {
     counter.innerHTML = `Counter: ${totalCount.toFixed(3)}`;
 
 });
+
 
 
 
