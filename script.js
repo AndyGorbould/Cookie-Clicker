@@ -1,4 +1,4 @@
-let cookie = document.getElementById("cookie");
+const cookie = document.getElementById("cookie");
 
 // init
 let countNumb = 0;
@@ -8,15 +8,13 @@ let i = 1;
 
 
 // multiplier One
-multiplierOne.addEventListener("click", function() {
-    
-    i + i;
+multiplierOne.addEventListener("click", function () {
+    i++;
 })
 
-
 // increment
-cookie.addEventListener("click", function() {
-    
-    counter.innerHTML = `Counter: ${countNumb + i}`;
+cookie.addEventListener("click", function () {
     countNumb++;
-    console.log("clicked") });
+    counter.innerHTML = `Counter: ${countNumb * i}`;
+
+});
