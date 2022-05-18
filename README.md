@@ -21,13 +21,15 @@
 - [X] Autoclicker (forEach might help? --- not needed, only useful for array)
 - [X] Autoclicker button enable/disable
 - [X] Autoclicker cost & amount purchased displayed
+- [X] Remove the starting values in HTML & use JS
+- [X] Styling the game (using materialize)
 
 --------------------------------------------------
 ##### NEXT STEP:
-- [] Remove the starting values in HTML & use JS
+- [] Bonus button to speed up gameplay after ?? points
 --------------------------------------------------
 ##### THEN:
-- [] Bonus button to speed up gameplay after ?? points
+- [] Think about extra features!
 --------------------------------------------------
 ##### FINALLY:
 - [] **Not letting JS beat me :)**

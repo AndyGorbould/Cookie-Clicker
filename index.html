@@ -7,33 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookie-Clicker</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 
-<body>
+<body class="blue-grey darken-3">
 
-    <h1>I'm A Cookie Clicker Game!</h1>
+    <h1 class="center-align">I'm A Cookie Clicker Game!</h1>
 
-    <h2 id="counter" class="the-counter">0</h2>
+    <h2 id="counter" class="the-counter center-align"></h2>
 
+    <div class="center-align">
+        <img id="cookie" class="center-align" src="img/cookie-main.svg" alt="Cookie">
+    </div>
 
-    <img id="cookie" src="img/cookie-main.svg" alt="Cookie">
+    <div class="row center-align">
+        <button id="multiplierOne" class="col s4 btn pink pulse waves-effect"></button>
+        <button id="autoClick" class="col s4 offset-s4 btn pink pulse waves-effect"></button>
+    </div>
 
-
-    <button id="multiplierOne">
-        <h2>Multiplier: 20c</h2>
-    </button>
-
-    <h2 id="multiTotal">Multipliers purchased: </h2>
-
-    <h2 id="multiAmount">1 x</h2>
-
-    <button id="autoClick">autoclick</button>
-
-
-
-
+    <h4 id="multiAmount" class="center-align"></h4>
 
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>

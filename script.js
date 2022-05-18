@@ -5,6 +5,16 @@ const multiplierOne = document.getElementById("multiplierOne");
 const multiplierTotalWrite = document.getElementById("multiTotal");
 const autoClickWrite = document.getElementById("autoClick");
 
+// init writes
+counter.innerHTML = `Counter: 0`;
+multiplierOne.innerHTML = `Buy a Multiplier: 20c (purchased: 0)`;
+autoClickWrite.innerHTML = `Buy an Autoclick cost: 20c (purchased: 0)`;
+multiAmount.innerHTML = `Multiplier: 1 x`;
+
+
+
+
+
 // init values
 let totalCount = 1000; // default should be 0, this is for testing only
 let multiplier = 1;
@@ -36,10 +46,10 @@ multiplierOne.addEventListener("click", function () {
     // increase multi cost
     multiCost = multiCost * 1.5;
     // next cost
-    multiplierOne.innerText = `Next multiplier cost: ${multiCost}`;
+    multiplierOne.innerText = `Next multiplier cost: ${multiCost.toFixed(2)} (purchased: ${multiplierTotal+1})`;
     // amount of multipliers
     multiplierTotal++;
-    multiplierTotalWrite.innerText = `Multipliers purchased: ${multiplierTotal}`;
+    // multiplierTotalWrite.innerText = `Multipliers purchased: ${multiplierTotal}`;
 });
 
 
@@ -52,7 +62,7 @@ cookie.addEventListener("click", function () {
 function writeAll() {
     counter.innerHTML = `Counter: ${totalCount.toFixed(1)}`;
     document.title = `${totalCount.toFixed(1)} Cookie Clicker Score`;
-    multiAmount.innerHTML = `${multiplier.toFixed(1)} x`;
+    multiAmount.innerHTML = `Multiplier: ${multiplier.toFixed(1)} x`;
 }
 
 // multi enable/disable (in gameplayLoop)
@@ -73,7 +83,7 @@ autoClick.addEventListener("click", function () {
     // increase multi cost
     autoClickCost = autoClickCost * 2;
     // next cost
-    autoClickWrite.innerText = `Next autoclick cost: ${autoClickCost}`;
+    autoClickWrite.innerText = `Next autoclick cost: ${autoClickCost} (purchased: ${autoClickTotal+1})`;
     autoClickTotal++;
 })
 
@@ -97,3 +107,7 @@ function autoEnable() {
         autoClickWrite.disabled = true;
     }
 }
+
+// hyperspeed button
+// hyperspeed timer (countdown style)
+// hyperspeed enable
