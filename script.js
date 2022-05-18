@@ -1,13 +1,15 @@
 // elements from document
 const cookie = document.getElementById("cookie");
 const multiplierOne = document.getElementById("multiplierOne");
+// remember to write html ids correctly!
+const multiplierTotalWrite = document.getElementById("multiTotal");
 
 // init values
-let clicks = 0;
-let totalCount = 0;
+let totalCount = 1000; // default should be 0, this is for testing only ;)
 let multiplier = 1;
 let autoClick = 0;
 let multiCost = 20;
+let multiplierTotal = 0;
 
 // gameplay loop (runs all functions every 0.1s)
 function gameplayLoop() {
@@ -32,7 +34,13 @@ multiplierOne.addEventListener("click", function () {
     multiCost = multiCost * 1.5;
     // next cost
     console.log(`Next multiplier cost: ${multiCost}`);
-    });
+    multiplierOne.innerText = `Next multiplier cost: ${multiCost}`;
+    // amount of multipliers
+    multiplierTotal++;
+    // console.log(multiplierTotal);
+    multiplierTotalWrite.innerText = `Multipliers purchased: ${multiplierTotal}`;
+});
+
 
 // clicks
 cookie.addEventListener("click", function () {
@@ -48,7 +56,8 @@ function writeAll() {
 
 // multi enable/disable
 function multiEnable() {
-    // multiplierOne.disabled = true;     ///////  need to disable button on pageload
+    // multiplierOne.disabled = true;
+    ///////  need to disable button on pageload
     if (multiCost <= totalCount) {
         multiplierOne.disabled = false;
     }
