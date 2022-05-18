@@ -18,10 +18,13 @@
 - [X] Made a MarkDown that serves a purpose; not just the list of requirements
 - [X] Add cost of multipliers
 - [X] Add count of how many multipliers have be purchased
+- [X] Autoclicker (forEach might help? --- not needed, only useful for array)
+- [X] Autoclicker button enable/disable
+- [X] Autoclicker cost & amount purchased displayed
 
 --------------------------------------------------
 ##### NEXT STEP:
-- [] Autoclicker (forEach might help?)
+- [] Remove the starting values in HTML & use JS
 --------------------------------------------------
 ##### THEN:
 - [] Bonus button to speed up gameplay after ?? points
