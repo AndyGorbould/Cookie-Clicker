@@ -16,15 +16,15 @@
 - [X] Increase the cost of additional multipliers (multiCost = multiCost * 1.5)
 - [X] Added if/else to disable/enable the multiplier button
 - [X] Made a MarkDown that serves a purpose; not just the list of requirements
+- [X] Add cost of multipliers
+- [X] Add count of how many multipliers have be purchased
 
 --------------------------------------------------
 ##### NEXT STEP:
-- [] Add cost of multipliers
-- [] Add count of how many multipliers have be purchased
+- [] Autoclicker (forEach might help?)
 --------------------------------------------------
 ##### THEN:
-- [] Autoclicker
-- [] Additional autoclickers to change interval time
+- [] Bonus button to speed up gameplay after ?? points
 --------------------------------------------------
 ##### FINALLY:
 - [] **Not letting JS beat me :)**
